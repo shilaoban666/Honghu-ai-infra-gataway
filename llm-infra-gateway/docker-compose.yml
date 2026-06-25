@@ -1,0 +1,25 @@
+services:
+  fake-vllm:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    entrypoint: ["/fake-vllm"]
+    environment:
+      FAKE_VLLM_ADDR: ":8000"
+      DEFAULT_MODEL: "fake-vllm-model"
+    ports:
+      - "8000:8000"
+
+  gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      GATEWAY_ADDR: ":8080"
+      DEFAULT_MODEL: "honghu-local-demo"
+      LOCAL_VLLM_URL: "http://fake-vllm:8000"
+      ENABLE_FAKE_PROVIDER: "true"
+    depends_on:
+      - fake-vllm
+    ports:
+      - "8080:8080"
