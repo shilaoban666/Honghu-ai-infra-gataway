@@ -1,0 +1,139 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="820" viewBox="0 0 1280 820">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#7f7b73"/>
+    </marker>
+    <marker id="arrow-hot" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#f39a18"/>
+    </marker>
+    <style>
+      .bg { fill: #fbfaf7; }
+      .section { fill: #ffffff; stroke: #ded9cf; stroke-width: 1.2; rx: 10; }
+      .node { fill: #f7f5ef; stroke: #aaa69d; stroke-width: 1.2; rx: 8; }
+      .blue { fill: #e8f3ff; stroke: #6aa3df; }
+      .green { fill: #dff4ee; stroke: #4ba993; }
+      .purple { fill: #eeeaff; stroke: #8b80e8; }
+      .orange { fill: #fff1dc; stroke: #d9963a; }
+      .title { font: 700 24px "Microsoft YaHei", "PingFang SC", Arial, sans-serif; fill: #33302c; }
+      .label { font: 600 16px "Microsoft YaHei", "PingFang SC", Arial, sans-serif; fill: #3f3f3f; }
+      .small { font: 500 13px "Microsoft YaHei", "PingFang SC", Arial, sans-serif; fill: #5f5b54; }
+      .code { font: 500 12px Consolas, monospace; fill: #4c4943; }
+      .section-label { font: 700 15px "Microsoft YaHei", "PingFang SC", Arial, sans-serif; fill: #55514a; }
+      .arrow { stroke: #7f7b73; stroke-width: 1.4; fill: none; marker-end: url(#arrow); }
+      .hot { stroke: #f39a18; stroke-width: 1.8; fill: none; marker-end: url(#arrow-hot); }
+      .dash { stroke: #aaa69d; stroke-width: 1.2; stroke-dasharray: 6 5; fill: none; marker-end: url(#arrow); }
+      .divider { stroke: #e5e0d8; stroke-width: 1; stroke-dasharray: 6 5; }
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1280" height="820"/>
+  <text class="title" x="40" y="45">Honghu LLM Infra Gateway：Go + K8s + vLLM + eBPF + AWS EKS + NVIDIA</text>
+  <text class="small" x="42" y="72">企业级推理网关、GPU 推理服务生命周期管理、成本追踪与可观测平台</text>
+
+  <rect class="section" x="40" y="100" width="235" height="220"/>
+  <text class="section-label" x="60" y="128">① 接入层</text>
+  <rect class="node blue" x="70" y="155" width="170" height="62"/>
+  <text class="label" x="155" y="180" text-anchor="middle">P1 鸿鹄平台</text>
+  <text class="small" x="155" y="201" text-anchor="middle">AI 应用 / RAG / Agent</text>
+  <rect class="node" x="70" y="235" width="170" height="56"/>
+  <text class="label" x="155" y="258" text-anchor="middle">OpenAI SDK</text>
+  <text class="code" x="155" y="278" text-anchor="middle">/v1/chat/completions</text>
+
+  <rect class="section" x="330" y="100" width="300" height="355"/>
+  <text class="section-label" x="350" y="128">② Go 数据面网关</text>
+  <rect class="node blue" x="365" y="155" width="230" height="72"/>
+  <text class="label" x="480" y="183" text-anchor="middle">LLM Gateway</text>
+  <text class="small" x="480" y="205" text-anchor="middle">鉴权 / 租户 / 流式代理</text>
+
+  <rect class="node orange" x="365" y="245" width="103" height="70"/>
+  <text class="label" x="416" y="272" text-anchor="middle">Router</text>
+  <text class="small" x="416" y="293" text-anchor="middle">任务复杂度</text>
+  <rect class="node orange" x="492" y="245" width="103" height="70"/>
+  <text class="label" x="543" y="272" text-anchor="middle">Billing</text>
+  <text class="small" x="543" y="293" text-anchor="middle">Token/成本</text>
+
+  <rect class="node" x="365" y="335" width="103" height="70"/>
+  <text class="label" x="416" y="363" text-anchor="middle">Limiter</text>
+  <text class="small" x="416" y="383" text-anchor="middle">预算/限流</text>
+  <rect class="node" x="492" y="335" width="103" height="70"/>
+  <text class="label" x="543" y="363" text-anchor="middle">Metrics</text>
+  <text class="code" x="543" y="383" text-anchor="middle">/metrics</text>
+
+  <rect class="section" x="695" y="100" width="255" height="260"/>
+  <text class="section-label" x="715" y="128">③ 推理层</text>
+  <rect class="node purple" x="730" y="155" width="185" height="82"/>
+  <text class="label" x="822" y="182" text-anchor="middle">Local vLLM</text>
+  <text class="small" x="822" y="204" text-anchor="middle">7B/8B GPU 推理</text>
+  <text class="code" x="822" y="223" text-anchor="middle">OpenAI API + /metrics</text>
+
+  <rect class="node green" x="730" y="260" width="185" height="70"/>
+  <text class="label" x="822" y="286" text-anchor="middle">Cloud Providers</text>
+  <text class="small" x="822" y="307" text-anchor="middle">DeepSeek / OpenAI</text>
+
+  <rect class="section" x="1000" y="100" width="230" height="260"/>
+  <text class="section-label" x="1020" y="128">④ AWS EKS GPU</text>
+  <rect class="node green" x="1030" y="155" width="170" height="62"/>
+  <text class="label" x="1115" y="180" text-anchor="middle">GPU Node Group</text>
+  <text class="small" x="1115" y="201" text-anchor="middle">g4dn / g5 / g6</text>
+  <rect class="node green" x="1030" y="235" width="170" height="62"/>
+  <text class="label" x="1115" y="259" text-anchor="middle">NVIDIA Plugin</text>
+  <text class="small" x="1115" y="280" text-anchor="middle">GPU 调度资源</text>
+
+  <rect class="section" x="40" y="510" width="360" height="245"/>
+  <text class="section-label" x="60" y="538">⑤ 控制面：LLMEngine Operator</text>
+  <rect class="node blue" x="70" y="565" width="135" height="64"/>
+  <text class="label" x="137" y="590" text-anchor="middle">LLMEngine</text>
+  <text class="code" x="137" y="611" text-anchor="middle">CRD</text>
+  <rect class="node blue" x="235" y="565" width="135" height="64"/>
+  <text class="label" x="302" y="590" text-anchor="middle">Reconciler</text>
+  <text class="small" x="302" y="611" text-anchor="middle">状态收敛</text>
+  <rect class="node" x="70" y="660" width="300" height="58"/>
+  <text class="label" x="220" y="684" text-anchor="middle">Deployment / Service / HPA</text>
+  <text class="small" x="220" y="705" text-anchor="middle">ServiceMonitor / PDB / Status</text>
+
+  <rect class="section" x="455" y="510" width="360" height="245"/>
+  <text class="section-label" x="475" y="538">⑥ 可观测：Prometheus + Grafana</text>
+  <rect class="node orange" x="485" y="565" width="135" height="64"/>
+  <text class="label" x="552" y="590" text-anchor="middle">Prometheus</text>
+  <text class="small" x="552" y="611" text-anchor="middle">ServiceMonitor</text>
+  <rect class="node orange" x="650" y="565" width="135" height="64"/>
+  <text class="label" x="717" y="590" text-anchor="middle">Grafana</text>
+  <text class="small" x="717" y="611" text-anchor="middle">Dashboard</text>
+  <rect class="node orange" x="485" y="660" width="300" height="58"/>
+  <text class="label" x="635" y="684" text-anchor="middle">Alertmanager</text>
+  <text class="small" x="635" y="705" text-anchor="middle">P99 / Queue / GPU / Cost 告警</text>
+
+  <rect class="section" x="870" y="510" width="360" height="245"/>
+  <text class="section-label" x="890" y="538">⑦ Runtime 观测：NVIDIA + eBPF</text>
+  <rect class="node green" x="900" y="565" width="135" height="64"/>
+  <text class="label" x="967" y="590" text-anchor="middle">DCGM Exporter</text>
+  <text class="small" x="967" y="611" text-anchor="middle">GPU 指标</text>
+  <rect class="node purple" x="1065" y="565" width="135" height="64"/>
+  <text class="label" x="1132" y="590" text-anchor="middle">eBPF Agent</text>
+  <text class="small" x="1132" y="611" text-anchor="middle">syscall / TCP</text>
+  <rect class="node" x="900" y="660" width="300" height="58"/>
+  <text class="label" x="1050" y="684" text-anchor="middle">Pod / PID / cgroup 关联</text>
+  <text class="small" x="1050" y="705" text-anchor="middle">不采集 Prompt / API Key</text>
+
+  <path class="hot" d="M 240 185 L 365 185"/>
+  <path class="arrow" d="M 240 263 L 365 263"/>
+  <path class="hot" d="M 595 190 L 730 190"/>
+  <path class="arrow" d="M 595 280 L 730 292"/>
+  <path class="arrow" d="M 915 196 L 1030 185"/>
+  <path class="arrow" d="M 1115 235 L 1115 217"/>
+
+  <path class="dash" d="M 220 565 C 300 500, 650 435, 822 237"/>
+  <path class="dash" d="M 302 629 C 440 470, 705 415, 822 237"/>
+
+  <path class="arrow" d="M 543 405 C 560 470, 560 520, 552 565"/>
+  <path class="arrow" d="M 822 237 C 770 415, 690 505, 620 565"/>
+  <path class="arrow" d="M 1115 297 C 1110 425, 1035 505, 967 565"/>
+  <path class="arrow" d="M 1115 217 C 1165 330, 1165 470, 1132 565"/>
+  <path class="arrow" d="M 1132 629 L 1132 660"/>
+  <path class="arrow" d="M 967 629 L 967 660"/>
+  <path class="arrow" d="M 620 629 L 650 660"/>
+
+  <line class="divider" x1="40" y1="480" x2="1230" y2="480"/>
+  <text class="small" x="42" y="795">关键边界：业务链路由 Gateway trace 记录；eBPF 负责内核级 syscall/network I/O 观测，不采集用户文本或密钥。</text>
+</svg>
+

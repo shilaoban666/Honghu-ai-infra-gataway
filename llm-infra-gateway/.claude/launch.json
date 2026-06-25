@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "honghu-ui",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["--prefix", "D:/Js_UI_projects", "run", "dev", "--", "--port", "5180", "--strictPort"],
+      "port": 5180
+    }
+  ]
+}
