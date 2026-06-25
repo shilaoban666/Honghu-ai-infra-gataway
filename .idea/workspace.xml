@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="640350d9-7233-46ca-a7d0-5065fe00dc35" name="Changes" comment="" />
+    <list default="true" id="682ace0a-9847-409a-bfc3-00de78da1c6f" name="Changes" comment="IA-Infra:add the AI infra for Honghu AI" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,66 +12,280 @@
   </component>
   <component name="CopilotPersistence">
     <persistenceIdMap>
-      <entry key="_D:/Go/llm-infra-gateway" value="3FZljpcWRuiXKtJZ7FCH59b1uiO" />
+      <entry key="_D:/Go" value="3FZnRGYKnXlsEEXdbtOGeMtZK9w" />
     </persistenceIdMap>
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="60" />
+    <option name="cachedIndexableFilesCount" value="71" />
   </component>
+  <component name="GOROOT" url="file://C:/Program Files/Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "shilaoban666"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/shilaoban666/Honghu-ai-infra-gataway.git",
+    "accountId": "8cbb7c61-9c94-48a3-8fe4-701a8c099d14"
+  }
+}]]></component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8,
-  "fromUser": false
-}]]></component>
-  <component name="ProjectId" id="3FZljpcWRuiXKtJZ7FCH59b1uiO" />
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.0003651902015442" />
+      <entry key="MS500" value="1.2531771091291777" />
+      <entry key="S2" value="2.393873071544464" />
+      <entry key="S5" value="3.9100507315958866" />
+      <entry key="S10" value="6.21459686806889" />
+      <entry key="S30" value="10.93609408146123" />
+      <entry key="S60" value="13.120464501745827" />
+      <entry key="M2" value="14.459886034344532" />
+      <entry key="M5" value="15.35789890977783" />
+      <entry key="M10" value="15.674430745979159" />
+      <entry key="M15" value="15.781936182079264" />
+      <entry key="M30" value="15.890455849941802" />
+      <entry key="H1" value="15.945099219865869" />
+      <entry key="H2" value="15.97251735268508" />
+      <entry key="H4" value="15.986250601886052" />
+      <entry key="D1" value="15.99770731133328" />
+      <entry key="W1" value="15.999672445551116" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="0.9662866443617066" />
+      <entry key="MS500" value="1.2442355705545705" />
+      <entry key="S2" value="2.389223379020574" />
+      <entry key="S5" value="3.906689971478787" />
+      <entry key="S10" value="6.211451557089651" />
+      <entry key="S30" value="10.933801617368792" />
+      <entry key="S60" value="13.118999168509074" />
+      <entry key="M2" value="14.459052114615497" />
+      <entry key="M5" value="15.35753768360268" />
+      <entry key="M10" value="15.674245213600635" />
+      <entry key="M15" value="15.781811376568612" />
+      <entry key="M30" value="15.890392882421473" />
+      <entry key="H1" value="15.945067593753002" />
+      <entry key="H2" value="15.972501503894321" />
+      <entry key="H4" value="15.986242668538756" />
+      <entry key="D1" value="15.99770598786385" />
+      <entry key="W1" value="15.999672256453549" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3,
+  &quot;fromUser&quot;: false
+}</component>
+  <component name="ProjectId" id="3FZnRGYKnXlsEEXdbtOGeMtZK9w" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Go Build.go build ebpf-agent/.executor": "Profiler#5",
+    "Go Test.TestAuthMiddleware in github.com/honghu-ai/llm-infra-gateway/internal/gateway/http.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.go.analysis.ui.options.defaults": "true",
     "RunOnceActivity.go.formatter.settings.were.checked": "true",
     "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "D:/Go/llm-infra-gateway",
-    "nodejs_package_manager_path": "npm"
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "release",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "D:/Go",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "go.vgo"
   }
 }]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="GoApplicationRunConfiguration" />
+      </set>
+    </option>
+    <option name="configurationStatuses">
+      <map>
+        <entry key="GoApplicationRunConfiguration">
+          <value>
+            <map>
+              <entry key="go build ebpf-agent/" value="STOPPED" />
+            </map>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="RunManager" selected="Go Test.TestAuthMiddleware in github.com/honghu-ai/llm-infra-gateway/internal/gateway/http">
+    <configuration name="go build ebpf-agent/ (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/honghu-ai/llm-infra-gateway/cmd/ebpf-agent" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/cmd/ebpf-agent" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build ebpf-agent/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/llm-infra-gateway" />
+      <kind value="PACKAGE" />
+      <package value="github.com/honghu-ai/llm-infra-gateway/cmd/ebpf-agent" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/llm-infra-gateway/cmd/ebpf-agent" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build fake-vllm/ (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/honghu-ai/llm-infra-gateway/cmd/fake-vllm" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/cmd/fake-vllm" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build fake-vllm/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/llm-infra-gateway" />
+      <kind value="PACKAGE" />
+      <package value="github.com/honghu-ai/llm-infra-gateway/cmd/fake-vllm" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/llm-infra-gateway/cmd/fake-vllm" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gateway/ (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/honghu-ai/llm-infra-gateway/cmd/gateway" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/cmd/gateway" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gateway/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/llm-infra-gateway" />
+      <kind value="PACKAGE" />
+      <package value="github.com/honghu-ai/llm-infra-gateway/cmd/gateway" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/llm-infra-gateway/cmd/gateway" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build operator/ (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/honghu-ai/llm-infra-gateway/cmd/operator" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/cmd/operator" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build operator/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/llm-infra-gateway" />
+      <kind value="PACKAGE" />
+      <package value="github.com/honghu-ai/llm-infra-gateway/cmd/operator" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/llm-infra-gateway/cmd/operator" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build router-bench/ (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="github.com/honghu-ai/llm-infra-gateway/cmd/router-bench" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/cmd/router-bench" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build router-bench/" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/llm-infra-gateway" />
+      <kind value="PACKAGE" />
+      <package value="github.com/honghu-ai/llm-infra-gateway/cmd/router-bench" />
+      <directory value="$PROJECT_DIR$" />
+      <auto_managed_config_id value="$PROJECT_DIR$/llm-infra-gateway/cmd/router-bench" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestAuthMiddleware in github.com/honghu-ai/llm-infra-gateway/internal/gateway/http" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="Go" />
+      <working_directory value="$PROJECT_DIR$/llm-infra-gateway/internal/gateway/http" />
+      <root_directory value="$PROJECT_DIR$/llm-infra-gateway" />
+      <kind value="PACKAGE" />
+      <package value="github.com/honghu-ai/llm-infra-gateway/internal/gateway/http" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestAuthMiddleware\E$" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Test.TestAuthMiddleware in github.com/honghu-ai/llm-infra-gateway/internal/gateway/http" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-gosdk-72a9cf600ed8-18ba651b3ff7-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-261.22158.42" />
-        <option value="bundled-js-predefined-d6986cc7102b-3bd3a6803838-JavaScript-GO-261.22158.42" />
+        <option value="bundled-gosdk-72a9cf600ed8-3dd3895e5e08-org.jetbrains.plugins.go.sharedIndexes.bundled-GO-261.25134.147" />
+        <option value="bundled-js-predefined-d6986cc7102b-31caf2ab9e3c-JavaScript-GO-261.25134.147" />
       </set>
     </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="640350d9-7233-46ca-a7d0-5065fe00dc35" name="Changes" comment="" />
-      <created>1782290609935</created>
+      <changelist id="682ace0a-9847-409a-bfc3-00de78da1c6f" name="Changes" comment="" />
+      <created>1782291449345</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1782290609935</updated>
+      <updated>1782291449345</updated>
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="github-copilot-workspace">
-    <instructionFileLocations>
-      <option value=".github/instructions" />
-    </instructionFileLocations>
-    <promptFileLocations>
-      <option value=".github/prompts" />
-    </promptFileLocations>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="IA-Infra:add the AI infra for Honghu AI" />
+    <option name="LAST_COMMIT_MESSAGE" value="IA-Infra:add the AI infra for Honghu AI" />
   </component>
 </project>
